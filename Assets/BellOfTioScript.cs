@@ -549,6 +549,8 @@ public class BellOfTioScript : MonoBehaviour
         if (m.Success)
         {
             yield return null;
+            yield return "solve";
+            yield return "strike";
             while (_isInteracting)
                 yield return null;
             BellSel.OnInteract();
